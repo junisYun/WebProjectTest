@@ -8,6 +8,9 @@
         function bodySetColor(color) {
             document.querySelector('body').style.color = color;
         }
+        function bodySetBackgroundColor(color) {
+            document.querySelector('body').style.backgroundColor = color;
+        }
         function setAtagTextColor(color) {
             var links = document.querySelectorAll('a');
                 var i = 0;
@@ -18,15 +21,17 @@
         }
         function nightDayHandler(self) {
             var target = document.querySelector('body');
+            // day -> night
             if (self.value === 'Day') {
-                target.style.backgroundColor = 'black';
+                bodySetBackgroundColor('black');
                 bodySetColor('white');
                 document.querySelector('.themeBorder').style.border = 'solid white';
                 self.value = 'Night';
                 setAtagTextColor('powderblue');
             }
+            // night -> day
             else {
-                target.style.backgroundColor = 'white';
+                bodySetBackgroundColor('white');
                 bodySetColor('black');
                 document.querySelector('.themeBorder').style.border = 'solid black';
                 self.value = 'Day';
