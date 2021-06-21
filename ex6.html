@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array</h1>
+    <script>
+        var coworkers = ["egoing", "leezche"];
+    </script>
+    <h2>Syntax</h2>
+    <input id="aa" type="button" value="Hello World 출력" onclick="
+         document.getElementById('demo').innerHTML = 'Hello World';
+    ">
+
+    <h2>Get</h2>
+    <script>
+        coworkers.push('duru');
+        for(var i = 0; i < coworkers.length; i++) {
+            document.write(coworkers[i] + " ")
+        }
+    </script>
+    <h2>Length</h2>
+    <script>
+        document.write(coworkers.length);
+    </script>
+    <p id="demo"></p>
+</body>
+</html>
